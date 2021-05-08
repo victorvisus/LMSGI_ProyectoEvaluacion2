@@ -26,7 +26,7 @@ let $casos := sum($eu/cases)
 let $res := <pais nombre="{$pa}" cases="{$casos}" />
 for $res1 in $res where $res/@cases > 2000 return $res
 ,
-(:5.- Mostrar los nombres de los 10 países con más fallecidos totales.:)
+(:5.- Mostrar los nombres de los 10 países con más fallecidos totales..:)
 
 "6.- Mostrar el país que haya tenido más fallecidos en un día.",
 let $in := doc("opendata.ecdc.europa.eu.xml")//record
